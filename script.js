@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded",function(){//Makes sure that the DO
             const winner=p>c?"Player wins the game!":c>p?"Computer wins the game!":"It's a tie! No one wins!";
             const choice=confirm(`Game Over! ${winner}\n\nDo you want to play again?`);
             if(choice){c=0;p=0;h133.textContent=p;h135.textContent=c;}
-            else window.close();
+            else {c=0;p=0;window.close();}
         }
     }
     const div3=document.querySelector('#div3');
